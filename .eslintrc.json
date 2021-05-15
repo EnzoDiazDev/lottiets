@@ -17,7 +17,8 @@
     "rules": {
         "indent": [
             "error",
-            4
+            4,
+            { "SwitchCase": 1 }
         ],
         "linebreak-style": [
             "error",
@@ -27,10 +28,6 @@
             "error",
             "double"
         ],
-        "semi": [
-            "error",
-            "always"
-        ],
         "prefer-const": [
             "error"
         ],
@@ -38,6 +35,8 @@
             "error",
             "always"
         ],
+        "semi": "off",
+        "@typescript-eslint/semi": ["error"],
         "no-trailing-spaces": "error",
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/ban-types": "off",
