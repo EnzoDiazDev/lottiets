@@ -4,8 +4,10 @@
   "description": "Una plantilla con mi estilo y algunas dependencias",
   "main": "./dist/Main.js",
   "scripts": {
-    "build": "tsc",
-    "dev": "cross-env NODE_ENV=development ts-node ./src/Main.ts"
+    "build": "tsc && tsc-alias",
+    "start": "node .",
+    "start:local": "npm run build && cross-env NODE_ENV=development node .",
+    "dev": "cross-env NODE_ENV=development ts-node -r tsconfig-paths/register ./src/Main.ts"
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,8 @@
     "eslint": "^7.9.0",
     "nodemon": "^2.0.4",
     "ts-node": "^10.2.1",
+    "tsc-alias": "^1.4.0",
+    "tsconfig-paths": "^3.11.0",
     "typescript": "^4.4.4"
   },
   "dependencies": {}
