@@ -1,4 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 if(process.env.NODE_ENV === "development") require("dotenv").config();
 
 class Main {
